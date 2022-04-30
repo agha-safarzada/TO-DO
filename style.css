@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(./assets/teahub.io-hd-gif-wallpapers-1080p-2885603.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin: 150px auto;
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, .5)
+}
+
+.head {
+    background-color: #ffdc40;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.center {
+    padding-left: 20px;
+}
+
+.list ul {
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 93%;
+}
+
+.list li {
+    list-style: none;
+    padding: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li .remove-button {
+    position: static;
+    margin-right: 20px;
+}
+
+.name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sort {
+    position: relative;
+    left: 320px;
+}
+
+#asc {
+    display: none;
+}
+
+.add .label {
+    background-color: white;
+    border: 2px solid gray;
+    height: 30px;
+    border-radius: 10px;
+    width: 93%;
+}
+
+.remove-button {
+    position: relative;
+    right: 50px;
+    top: 6px;
+}
+
+.button {
+    border-style: none;
+    margin: 20px 0 20px 90px;
+}
+
+.button .plus {
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    background-color: #9953f1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.button .adding {
+    display: inline-block;
+    background-color: #833ae0;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.search {
+    padding-left: 20px;
+}
+
+#search {
+    background-color: white;
+    border: 2px solid gray;
+    height: 40px;
+    border-radius: 10px;
+    width: 93%;
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
