@@ -71,9 +71,9 @@ sortDesc.addEventListener('click', () => {
     values.forEach(element => {
         arr.push(element.textContent)
     });
-    arr.sort().reverse()
-    for (i = 0; i < arr.length; i++) {
-        values[i].innerHTML = `${arr[i]} <img class="remove-button" src="./assets/Group 77.png" alt="remove">`
+    let sortedarr = arr.sort((a, b) => b - a)
+    for (i = 0; i < sortedarr.length; i++) {
+        values[i].innerHTML = `${sortedarr[i]} <img class="remove-button" src="./assets/Group 77.png" alt="remove">`
 
     }
 })
@@ -86,9 +86,9 @@ sortAsc.addEventListener('click', () => {
     values.forEach(element => {
         arr.push(element.textContent)
     });
-    arr.sort();
-    for (i = 0; i < arr.length; i++) {
-        values[i].innerHTML = `${arr[i]} <img class="remove-button" src="./assets/Group 77.png" alt="remove">`
+    let sortedarr = arr.sort((a, b) => a - b)
+    for (i = 0; i < sortedarr.length; i++) {
+        values[i].innerHTML = `${sortedarr[i]} <img class="remove-button" src="./assets/Group 77.png" alt="remove">`
 
     }
 })
